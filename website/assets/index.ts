@@ -5,7 +5,7 @@ import Ads from "@starlord25/mediaplayer";
 
 const video = document.querySelector("video");
 const player = new MediaPlayer({
-  el: video,
+  media: video,
   plugins: [new AutoPlay(), new AutoPause(), new Ads()],
 });
 
@@ -22,7 +22,7 @@ muteButton.onclick = () => {
 };
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js").catch((error) => {
+  navigator.serviceWorker.register(new URL('/sw.js', import.meta.url)).catch((error) => {
     console.log(error.message);
   });
 }
