@@ -1,6 +1,6 @@
 {
   "name": "@starlord25/mediaplayer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Platzi Mediaplayer",
   "repository": "https://github.com/bryanjtc-platzi/javascript-profesional",
   "main": "lib/MediaPlayer.js",
